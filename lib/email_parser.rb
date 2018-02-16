@@ -5,10 +5,10 @@
 class EmailParser
   attr_accessor :list
   
-  @@emails = []
+  @@emails = ""
   
   def initialize (list)
-    @@emails << list
+    @@emails = list
   end
   
   

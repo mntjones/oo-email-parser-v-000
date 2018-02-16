@@ -7,8 +7,13 @@ class EmailParser
   
   @@emails = []
   
+  def initialize (list)
+    @@emails << list
+  end
+  
+  
   def parse
-    email_list = self.list.split(/[\s,]+/)
+    email_list = @@emails.split(/[\s,]+/)
     email_list
   end
   
